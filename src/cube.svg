@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 156 300" width="70">
-    <rect fill="#8585e7"
+    <rect fill="hsl(0deg, 80%, 65%)"
     x="0" y="0" width="156" height="300"/>
 
     <!-- left faces -->
-    <path fill="blue" d="
+    <path fill="hsl(0deg, 80%, 55%)" d="
         M 0 0
         l 78 50
         v 100
@@ -18,7 +18,7 @@
     " />
 
     <!-- right faces -->
-    <path fill="darkblue" d="
+    <path fill="hsl(0deg, 80%, 35%)" d="
         M 78 50
         l 78 -50
         v 100
