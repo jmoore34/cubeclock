@@ -64,6 +64,10 @@ const StyledTextfit = styled(Textfit)`
   animation: ${hueRotate} linear infinite 40s;
   z-index: 2;
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 const CubeBackground = styled.div`
