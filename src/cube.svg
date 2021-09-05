@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 156 300" width="70">
+    <rect fill="lightblue"
+    x="0" y="0" width="156" height="300"/>
+
+    <!-- left faces -->
+    <path fill="blue" d="
+        M 0 0
+        l 78 50
+        v 100
+        l -78 -50
+        z 
+
+        m 78 150
+        l 78 50
+        v 100
+        l -78 -50
+        z 
+    " />
+
+    <!-- right faces -->
+    <path fill="darkblue" d="
+        M 78 50
+        l 78 -50
+        v 100
+        l -78 50
+        z
+
+        m -78 150
+        l 78 -50
+        v 100
+        l -78 50
+        z
+    " />
+
+</svg>
