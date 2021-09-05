@@ -1,4 +1,3 @@
-import { time } from "console";
 import { useEffect, useState } from "react";
 
 export function useTime() {
@@ -19,7 +18,11 @@ export function useTime() {
         return () => clearTimeout(timeout);
     });
 
-    return zeroPad(displayedDate.getHours() % 12)
+    var hour = displayedDate.getHours() % 12;
+    if (hour === 0)
+    hour = 12;
+
+    return zeroPad(hour)
      + ":"
      + zeroPad(displayedDate.getMinutes())
 }
