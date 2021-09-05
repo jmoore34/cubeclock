@@ -4,12 +4,16 @@ import cube from './cube.svg'
 import styled from 'styled-components';
 // @ts-ignore
 import { Textfit } from 'react-textfit';
+import { useTime } from './util';
 
 function App() {
+
+  const time = useTime()
+
   return (
     <CubeBackground>
       <StyledTextfit mode="single" forceSingleModeWidth={false} min={50} max={2000}>
-        9:52
+        {time}
       </StyledTextfit>
     </CubeBackground>
   );
