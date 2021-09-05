@@ -11,13 +11,23 @@ function App() {
   const time = useTime()
 
   return (
-    <CubeBackground>
+    <Wrapper>
+      <CubeBackground />
       <StyledTextfit mode="single" forceSingleModeWidth={false} min={50} max={2000}>
         {time}
       </StyledTextfit>
-    </CubeBackground>
+    </Wrapper>
   );
 }
+
+const Wrapper = styled.div`
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+`;
 
 const hueRotate = keyframes`
   from {
@@ -26,6 +36,17 @@ const hueRotate = keyframes`
 
   to {
     filter: hue-rotate(360deg);
+  }
+`;
+
+const translate = keyframes`
+  from {
+    transform: translate(-156px, -300px);
+
+  }
+
+  to {
+    transform: translate(0px, 0px);
   }
 `;
 
@@ -39,13 +60,19 @@ const StyledTextfit = styled(Textfit)`
   background-color: hsl(120deg, 50%, 50%);
   mix-blend-mode: hue;
   animation: ${hueRotate} linear infinite 40s;
+  z-index: 2;
+  position: absolute;
 `;
 
 const CubeBackground = styled.div`
   background: url(${cube});
   background-repeat: repeat;
-  width: 100vw;
-  height: 100vh;
+  width: calc(100vw + 156px);
+  height: calc(100vh + 300px);
+  z-index: 1;
+  position: absolute;
+  background-size: 156px 300px;
+  animation: ${translate} linear infinite 3s;
 `;
 
 export default App;
