@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/cubeclock/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/cubeclock/static/js/main.280d4eb8.chunk.js",
-    "main.js.map": "/cubeclock/static/js/main.280d4eb8.chunk.js.map",
+    "main.js": "/cubeclock/static/js/main.c761e928.chunk.js",
+    "main.js.map": "/cubeclock/static/js/main.c761e928.chunk.js.map",
     "runtime-main.js": "/cubeclock/static/js/runtime-main.52c88771.js",
     "runtime-main.js.map": "/cubeclock/static/js/runtime-main.52c88771.js.map",
     "static/js/2.757644e2.chunk.js": "/cubeclock/static/js/2.757644e2.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.52c88771.js",
     "static/js/2.757644e2.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.280d4eb8.chunk.js"
+    "static/js/main.c761e928.chunk.js"
   ]
 }
