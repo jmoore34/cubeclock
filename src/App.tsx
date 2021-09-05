@@ -5,13 +5,14 @@ import styled, { keyframes } from 'styled-components';
 // @ts-ignore
 import { Textfit } from 'react-textfit';
 import { useTime } from './util';
+import screenfull from 'screenfull';
 
 function App() {
 
   const time = useTime()
 
   return (
-    <Wrapper>
+    <Wrapper onClick={e => screenfull.isEnabled && screenfull.toggle(document.documentElement)} hideCursor={screenfull.isEnabled && screenfull.isFullscreen}>
       <CubeBackground />
       <StyledTextfit mode="single" forceSingleModeWidth={false} min={50} max={2000}>
         {time}
@@ -20,13 +21,14 @@ function App() {
   );
 }
 
-const Wrapper = styled.div`
+const Wrapper = styled.div<{hideCursor: boolean}>`
   width: 100vw;
   height: 100vh;
   overflow: hidden;
   position: absolute;
   left: 0;
   right: 0;
+  ${props => props.hideCursor && "cursor: none;"}
 `;
 
 const hueRotate = keyframes`
