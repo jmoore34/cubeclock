@@ -22,7 +22,7 @@ export function useTime() {
     if (hour === 0)
     hour = 12;
 
-    return zeroPad(hour)
+    return hour
      + ":"
      + zeroPad(displayedDate.getMinutes())
 }
