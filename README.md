@@ -10,3 +10,7 @@ Try it now: https://jmoore34.github.io/cubeclock/
 Start dev server: `yarn start`
 
 Deploy to github pages: `yarn deploy`
+
+## See also
+
+[Binary clock](https://github.com/jmoore34/binaryclock)
